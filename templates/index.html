@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScribeScan | Professional Handwriting Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-bg"></div>
+    
+    <header>
+        <div class="container">
+            <h1 class="logo">Scribe<span>Scan</span></h1>
+            <p class="tagline">Advanced Student Handwriting Identification</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="upload-section">
+            <div id="drop-zone" class="drop-zone">
+                <div class="drop-zone-content">
+                    <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <h3>Upload Student Work</h3>
+                    <p>Drag & drop image or click to browse</p>
+                    <input type="file" id="file-input" accept="image/*" hidden>
+                </div>
+            </div>
+            
+            <div id="preview-panel" class="preview-panel hidden">
+                <div class="preview-header">
+                    <h4>Selected File</h4>
+                    <button id="cancel-btn" class="btn-text">Change</button>
+                </div>
+                <img id="image-preview" src="" alt="Preview">
+                <button id="analyze-btn" class="btn-primary">Analyze Handwriting</button>
+            </div>
+        </section>
+
+        <section id="results-section" class="results-section hidden">
+            <div class="card result-card">
+                <div class="loader-container hidden" id="loader">
+                    <div class="loader"></div>
+                    <p>Processing Neural Networks...</p>
+                </div>
+                <div id="result-content">
+                    <div class="result-header">
+                        <h2>Analysis Result</h2>
+                        <span class="badge" id="confidence-badge">98% Confidence</span>
+                    </div>
+                    <div class="result-body">
+                        <div class="result-item">
+                            <label>Identified Student ID</label>
+                            <div class="value" id="student-id">--</div>
+                        </div>
+                        <div class="result-item">
+                            <label>Segments Analyzed</label>
+                            <div class="value-small" id="segments-count">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ScribeScan AI. Professional Deep Learning Solutions.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

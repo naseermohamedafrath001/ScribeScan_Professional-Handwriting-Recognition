@@ -1,7 +1,7 @@
 # ScribeScan | Professional Handwriting Recognition
 ScribeScan is a comprehensive web-based application designed to identify student IDs from handwriting samples using Deep Learning. This project provides a bridge between traditional handwritten work and digital record-keeping, allowing educators to instantly identify authors of submitted assignments. It serves as a dynamic platform for managing student identification, processing bulk handwriting data, and fostering an efficient grading workflow.
 
-<img width="1919" height="1141" alt="Image" src="https://github.com/user-attachments/assets/5fa294d5-5b53-4f45-8553-104ea5b63863" />
+![ScribeScan Dashboard](file:///c:/Users/imtha/Documents/My/DL/Deep%20learning%20Project%20n/screenshot.png)
 
 ## Features
 - **Neural Identity Detection:** Uses a custom Deep CNN to match handwriting patterns to student IDs.
@@ -12,6 +12,8 @@ ScribeScan is a comprehensive web-based application designed to identify student
 ## User Types
 - **Admin:** Full control over model training, batch processing, and system optimization.
 - **User/Educator:** Can upload student work, analyze handwriting, and view identification results.
+
+![Interface Preview](file:///c:/Users/imtha/Documents/My/DL/Deep%20learning%20Project%20n/screenshot.png)
 
 ## User Side
 - **Handwriting Upload:** Simple drag-and-drop interface for document scanning.
@@ -25,11 +27,11 @@ ScribeScan is a comprehensive web-based application designed to identify student
 - **Model Training:** Retrain the Deep CNN on new handwriting samples to expand system coverage.
 - **Data Augmentation:** Configure spatial jitter and noise to improve model robustness.
 
-<img width="1919" height="1142" alt="Image" src="https://github.com/user-attachments/assets/16ad94a9-4248-4777-8a49-c0269844f218" />
+![ScribeScan Analysis](file:///c:/Users/imtha/Documents/My/DL/Deep%20learning%20Project%20n/screenshot.png)
 
 ## Demo
 A short demonstration of the ScribeScan system:
-https://drive.google.com/file/d/14aAkY11Bw5EK6hbeO4Hvfu5v312J1irF/view?usp=sharing 
+
 
 ## Technology Stack
 - **Backend:** Python (Flask)
