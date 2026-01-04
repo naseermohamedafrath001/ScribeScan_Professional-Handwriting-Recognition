@@ -1,7 +1,7 @@
 # ScribeScan | Professional Handwriting Recognition
 ScribeScan is a comprehensive web-based application designed to identify student IDs from handwriting samples using Deep Learning. This project provides a bridge between traditional handwritten work and digital record-keeping, allowing educators to instantly identify authors of submitted assignments. It serves as a dynamic platform for managing student identification, processing bulk handwriting data, and fostering an efficient grading workflow.
 
-![ScribeScan Dashboard](file:///c:/Users/imtha/Documents/My/DL/Deep%20learning%20Project%20n/screenshot.png)
+<img width="1919" height="1141" alt="Image" src="https://github.com/user-attachments/assets/873952cf-825b-451c-b8f7-832970f618f9" />
 
 ## Features
 - **Neural Identity Detection:** Uses a custom Deep CNN to match handwriting patterns to student IDs.
@@ -12,8 +12,6 @@ ScribeScan is a comprehensive web-based application designed to identify student
 ## User Types
 - **Admin:** Full control over model training, batch processing, and system optimization.
 - **User/Educator:** Can upload student work, analyze handwriting, and view identification results.
-
-![Interface Preview](file:///c:/Users/imtha/Documents/My/DL/Deep%20learning%20Project%20n/screenshot.png)
 
 ## User Side
 - **Handwriting Upload:** Simple drag-and-drop interface for document scanning.
@@ -27,11 +25,11 @@ ScribeScan is a comprehensive web-based application designed to identify student
 - **Model Training:** Retrain the Deep CNN on new handwriting samples to expand system coverage.
 - **Data Augmentation:** Configure spatial jitter and noise to improve model robustness.
 
-![ScribeScan Analysis](file:///c:/Users/imtha/Documents/My/DL/Deep%20learning%20Project%20n/screenshot.png)
+<img width="1919" height="1142" alt="Image" src="https://github.com/user-attachments/assets/16ad94a9-4248-4777-8a49-c0269844f218" />
 
 ## Demo
 A short demonstration of the ScribeScan system:
-
+https://drive.google.com/file/d/14aAkY11Bw5EK6hbeO4Hvfu5v312J1irF/view?usp=drive_link
 
 ## Technology Stack
 - **Backend:** Python (Flask)
@@ -45,6 +43,8 @@ A short demonstration of the ScribeScan system:
    - Install required libraries: `pip install tensorflow opencv-python flask tqdm`
 2. **Download:**
    - Clone or download the project source code.
+3. **Dataset:**
+   - https://drive.google.com/drive/folders/1tzTBh5aRwFXPhTUBpKNL9L-13YlaW-D2?usp=drive_link
 3. **Model Setup:**
    - Ensure `model.h5` and `labels.json` are in the root directory.
 4. **Running the Application:**
@@ -69,3 +69,4 @@ Anshath Ahamed Ajumil - anshath7@gmail.com
 Mohamed Nawran - mhdnawran4@gmail.com
 Sharaf Sahir - sharafsakeer3333@gmail.com
 Mohamed Afrath - mohamednaseermohamedafrath@gmail.com
+
